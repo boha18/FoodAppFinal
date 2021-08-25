@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Text, StyleSheet, View, Image
 } from 'react-native';
+import ButtonApp from './src/Component/ButtonApp';
 import LogoText from './src/Component/LogoText';
 
 import { images } from './src/constants'
@@ -14,7 +15,7 @@ import { SplashScreen } from './src/screens'
 
 const App = () => {
   return (
-    <SplashScreen />
+    <ButtonApp />
   )
 }
 
