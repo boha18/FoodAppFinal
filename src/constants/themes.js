@@ -1,7 +1,6 @@
 import { Dimensions, StyleSheet } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
-
 export const COLORS = {
     primaryColor: '#FFAD1D',
     primaryColor_1: '#FFC668',
@@ -16,15 +15,13 @@ export const COLORS = {
     greenColorLighter: '#53E88B',
     greenColorDarker: '#15BE77',
 
-
-
     Black: '#09051C',
     Black_1: '#444352',
     Black_2: '#86848F',
     Black_3: '#CECDD2',
 
     white: '#FFFFFF',
-}
+};
 
 export const SIZE = {
     fontSizeXXL: 64,
@@ -33,13 +30,18 @@ export const SIZE = {
     fontSizeM: 32,
     fontSizeS: 13,
 
+    buttonSmall: 157,
+    buttonMedium: 175,
 
     width,
     height,
-}
+};
 
 export const FONTS = {
     Viga: 'Viga-Regular',
     Inter: 'Inter-SemiBold',
-}
+};
 
+export const PADDING_OFFSET = {
+    HORIZONTAL: 10,
+};

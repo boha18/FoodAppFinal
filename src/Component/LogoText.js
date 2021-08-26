@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
         fontFamily: FONTS.Inter,
         fontSize: SIZE.fontSizeS,
         height: 13,
-        lineHeight: 14,
     },
     titleText: {
         fontFamily: FONTS.Viga,

@@ -9,21 +9,29 @@ import { COLORS, FONTS, images, SIZE } from '../constants';
 import LinearGradient from 'react-native-linear-gradient';
 
 
-const ButtonApp = () => {
+const ButtonApp = ({ text, width }) => {
     return (
-        <LinearGradient
-            colors={['#4c669f', '#3b5998', '#192f6a']}
-            style={styles.linearGradient}>
-        </LinearGradient>
+        <LinearGradient colors={[COLORS.greenColorLighter, COLORS.greenColorDarker]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            style={[styles.linearGradient, { width: width }]} >
+            <Text style={styles.buttonText}>
+                {text}
+            </Text>
+        </LinearGradient >
     )
 };
 
 const styles = StyleSheet.create({
     linearGradient: {
-        flex: 1,
-        paddingLeft: 15,
-        paddingRight: 15,
-        borderRadius: 5
+        height: 57,
+        justifyContent: 'center',
+        borderRadius: 15,
+    },
+    buttonText: {
+        fontSize: 16,
+        textAlign: 'center',
+        color: COLORS.white,
     },
 })
 
