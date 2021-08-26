@@ -9,9 +9,9 @@ import { COLORS, FONTS, images, SIZE } from '../constants';
 
 
 
-const LogoText = () => {
+const LogoText = ({ position }) => {
     return (
-        <View style={styles.logoContainer}>
+        <View style={[styles.logoContainer, { position: position }]}>
             <Image
                 source={images.logo}
                 resizeMode='contain'
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
         fontFamily: FONTS.Inter,
         fontSize: SIZE.fontSizeS,
         height: 13,
+        lineHeight: 14
     },
     titleText: {
         fontFamily: FONTS.Viga,
@@ -37,7 +38,6 @@ const styles = StyleSheet.create({
         color: COLORS.greenColorLighter,
     },
     logoContainer: {
-        position: 'absolute',
         justifyContent: 'center',
         alignItems: 'center',
     },

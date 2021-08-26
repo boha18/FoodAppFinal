@@ -16,7 +16,7 @@ const SplashScreen = () => {
             <Image
                 source={images.Background}
                 style={styles.image} />
-            <LogoText />
+            <LogoText position={'absolute'} />
         </View>
     )
 };

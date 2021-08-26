@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {
-    Image, StyleSheet, Text, View
+    StyleSheet, Text, TouchableOpacity,
 } from 'react-native';
 
 
@@ -11,14 +11,16 @@ import LinearGradient from 'react-native-linear-gradient';
 
 const ButtonApp = ({ text, width }) => {
     return (
-        <LinearGradient colors={[COLORS.greenColorLighter, COLORS.greenColorDarker]}
-            start={{ x: 0, y: 0 }}
-            end={{ x: 1, y: 1 }}
-            style={[styles.linearGradient, { width: width }]} >
-            <Text style={styles.buttonText}>
-                {text}
-            </Text>
-        </LinearGradient >
+        <TouchableOpacity>
+            <LinearGradient colors={[COLORS.greenColorLighter, COLORS.greenColorDarker]}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+                style={[styles.linearGradient, { width: width }]} >
+                <Text style={styles.buttonText}>
+                    {text}
+                </Text>
+            </LinearGradient >
+        </TouchableOpacity>
     )
 };
 

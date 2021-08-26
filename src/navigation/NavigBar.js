@@ -6,7 +6,7 @@ import {
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { HomeScreen, SplashScreen, WelcomeScreen } from '../screens';
+import { HomeScreen, SplashScreen, WelcomeScreenSecond, WelcomeScreenFirst } from '../screens';
 
 const bottomNav = createBottomTabNavigator();
 
@@ -19,7 +19,7 @@ const NvigBar = () => {
                 }}
                 initialRouteName={'Home'}>
                 <bottomNav.Screen name="SplashScreen" component={SplashScreen} />
-                <bottomNav.Screen name="WelcomeScreen" component={WelcomeScreen} />
+                <bottomNav.Screen name="WelcomeScreenSecond" component={WelcomeScreenSecond} />
             </bottomNav.Navigator>
         </NavigationContainer>
     )

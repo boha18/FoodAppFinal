@@ -21,6 +21,9 @@ export const COLORS = {
     Black_3: '#CECDD2',
 
     white: '#FFFFFF',
+
+    borderColor: '#F4F4F4',
+    placeHolderColor: '#3B3B3B',
 };
 
 export const SIZE = {
@@ -45,3 +48,8 @@ export const FONTS = {
 export const PADDING_OFFSET = {
     HORIZONTAL: 10,
 };
+
+export const constantsComponent = {
+    maxFormWidth: 400,
+    fromHeight: 58,
+}

@@ -1,5 +1,13 @@
 import HomeScreen from "./HomeScreen";
-import WelcomeScreen from "./WelcomeScreen";
+import WelcomeScreenSecond from "./WelcomeScreenSecond";
+import WelcomeScreenFirst from "./WelcomeScreenFirst";
 import SplashScreen from "./SplashScreen";
+import LoginScreen from "./LoginScreen";
 
-export { HomeScreen, WelcomeScreen, SplashScreen }
+export {
+    HomeScreen,
+    WelcomeScreenFirst,
+    WelcomeScreenSecond,
+    SplashScreen,
+    LoginScreen
+}
