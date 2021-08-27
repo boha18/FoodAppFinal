@@ -46,10 +46,14 @@ export const FONTS = {
 };
 
 export const PADDING_OFFSET = {
-    HORIZONTAL: 10,
+    HORIZONTAL: 20,
+    VERTICAL: 20,
+    betweenForms: 12,
+    betweenButtons: 20,
 };
 
 export const constantsComponent = {
     maxFormWidth: 400,
     fromHeight: 58,
+    buttonHeight: 73,
 }

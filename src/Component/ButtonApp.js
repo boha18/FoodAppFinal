@@ -9,9 +9,9 @@ import { COLORS, FONTS, images, SIZE } from '../constants';
 import LinearGradient from 'react-native-linear-gradient';
 
 
-const ButtonApp = ({ text, width }) => {
+const ButtonApp = ({ text, width, alignSelf }) => {
     return (
-        <TouchableOpacity>
+        <TouchableOpacity style={alignSelf && { alignSelf: alignSelf }}>
             <LinearGradient colors={[COLORS.greenColorLighter, COLORS.greenColorDarker]}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }}
