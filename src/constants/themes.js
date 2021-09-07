@@ -21,12 +21,12 @@ export const COLORS = {
   Black_3: '#CECDD2',
 
   white: '#FFFFFF',
-
   borderColor: '#F4F4F4',
   placeHolderColor: '#3B3B3B',
 
   shadowColor: '#5A6CEA',
   backgroundColor: '#FEFEFF',
+  buttonBackgroundColor: '#F9A84D',
 };
 
 export const SIZE = {
